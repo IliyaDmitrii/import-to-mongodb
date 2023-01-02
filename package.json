@@ -1,0 +1,27 @@
+{
+  "name": "exporttomongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "db-migrate": "db-migrate $DATABASE_URL",
+    "db-rollback": "db-rollback",
+    "db-create": "db-create",
+    "db-status": "db-status"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.1.0",
+    "child_process": "1.0.2",
+    "config": "^3.3.8",
+    "db-migrator": "^2.4.0",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
