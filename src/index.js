@@ -16,14 +16,13 @@ const init = async () => {
 
     const server = Hapi.server(hapiOptions); // create server
 
-    // router to get from db
     server.route({
         method: 'GET',
         path: '/users',
         handler: async function (request, h){
-            const query = "SELECT * FROM users"; // string query db
-            const result = await pool.query(query); // get from database by query
-            return JSON.stringify(result.rows, null, 3); // result to Json
+            const query = "SELECT * FROM users";
+            const result = await pool.query(query);
+            return JSON.stringify(result.rows, null, 3);
         },
         options: {
             tags: ['api']
