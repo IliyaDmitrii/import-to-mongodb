@@ -2,7 +2,7 @@
 
 Utilizes Node.js 19.3.0 and framework Hapi.js
 
-To install the modules:
+To run service:
 
 ```
 npm install
