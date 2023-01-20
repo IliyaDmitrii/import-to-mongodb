@@ -1,4 +1,4 @@
-# PostgresSQL To MongoDb in Node.Js
+# import to mongo
 
 Utilizes Node.js 19.3.0 and framework Hapi.js
 
